@@ -8,11 +8,11 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor=" let platform of platforms" (click)="selectPlat(platform.id)">
-            <td>{{platform.id}}</td>
-            <td>{{platform.name}}</td>
-            <td>{{platform.img}}</td>
-            <td>{{platform.fleet}}</td>
+        <tr *ngFor=" let sensor of sensors" (click)="selectSens(sensor.id)">
+            <td>{{sensor.id}}</td>
+            <td>{{sensor.name}}</td>
+            <td>{{sensor.img}}</td>
+            <td>{{sensor.fleet}}</td>
         </tr>
     </tbody>
 </table>

@@ -23,6 +23,9 @@ export class LoginComponent {
     constructor(private api: ApiService, private router : Router) { }
 
     ngOnInit(): void {
+      if (localStorage.getItem('token') != null) {
+        this.router.navigate(['inicio']);
+      }
     }
 
     login(form : any) {
